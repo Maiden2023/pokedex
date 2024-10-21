@@ -1,0 +1,40 @@
+.pokedex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+    
+    .pokemon-card {
+        width: 200px;
+        border-radius: 20px;
+        background-color: #0d1117;
+        color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    }
+    
+    .pokemon-card:hover {
+        transform: translateY(-10px); /* Eleva la tarjeta */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade sombra al levantarla */
+    }
+    
+    .pokemon-image {
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease; /* Transición para la imagen */
+    }
+    
+    .pokemon-card:hover .pokemon-image {
+        transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+    }
+    
+    .pokemon-id {
+        color: gray;
+    }  
+    .pokemon-button {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 50px;
+    }
+    

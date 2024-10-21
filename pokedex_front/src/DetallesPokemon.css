@@ -1,0 +1,110 @@
+.pokemon-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff; /* Texto blanco */
+    min-height: 100vh;
+  }
+  
+  .pokemon-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .pokemon-image {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+  }
+  
+  .pokemon-data {
+    max-width: 400px;
+  }
+  
+  .stats-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .stats-table {
+    width: 100%;
+  }
+  
+  .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .stat-name {
+    width: 100px;
+  }
+  
+  .stat-value {
+    width: 50px;
+    text-align: right;
+  }
+  
+  .stat-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+    height: 10px !important;
+    border-radius: 5px;
+    background-color: #444444; /* Fondo de la barra */
+  }
+  
+  .stat-bar .MuiLinearProgress-bar {
+    background-color: #ffcc00; /* Color de la barra de progreso */
+  }
+  
+  .stat-min,
+  .stat-max {
+    width: 50px;
+    text-align: right;
+  }
+  
+  .stat-row.total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .evolutions-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .evolutions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .evolution-card {
+    background-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .evolution-image {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+  }
+  
+  .evolution-card.current {
+    cursor: default;
+  }
+  
+  .evolution-card:hover .evolution-image {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
